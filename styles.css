@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Background Styling */
+.background-overlay {
+    background: linear-gradient(rgba(20, 20, 50, 0.8), rgba(20, 20, 50, 0.8)), url('background.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Form Title */
+.form-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Form Description */
+.form-description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(30, 30, 60, 0.8); /* Slightly darker background for inputs */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Placeholder Styling */
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Slightly lighter placeholder color */
+}
+
+/* Input and Select Hover/Focus */
+input:focus, textarea:focus, select:focus {
+    border-color: #ffffff;
+    background-color: rgba(50, 50, 80, 0.9);
+}
+
+/* Submit Button */
+.submit-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #6a85b6, #bac8e0);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background: linear-gradient(45deg, #bac8e0, #6a85b6);
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 2rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+    }
+}
+/* Keep the same styles from the previous CSS, adjusted for additional fields */
+
+/* Changes made to maintain spacing for new fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 60px; /* Adjusted height for hobbies */
+}
